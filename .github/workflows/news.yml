@@ -45,5 +45,10 @@ jobs:
             echo "No state changes to commit."
           else
             git commit -m "Update news state [skip ci]"
-            git push
+            for i in 1 2 3 4 5; do
+              git push && break
+              echo "Push rejected, rebasing onto latest main (attempt $i)..."
+              git fetch origin main
+              git rebase origin/main
+            done
           fi
