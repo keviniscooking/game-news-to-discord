@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!-- net10.0 to match your F1RaceEngineer project.
+         (net8.0 also works if you ever need an LTS target.) -->
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Parses both RSS 2.0 (Steam) and Atom feeds. -->
+    <PackageReference Include="System.ServiceModel.Syndication" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>

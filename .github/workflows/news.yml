@@ -1,0 +1,49 @@
+name: Game News to Discord
+
+on:
+  schedule:
+    # Every 30 minutes. GitHub's scheduler is best-effort and can lag a few
+    # minutes under load, which is fine for game news.
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      seed_only:
+        description: "Seed state without posting (marks current items as seen)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: game-news
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Run news sync
+        env:
+          DISCORD_WEBHOOKS: ${{ secrets.DISCORD_WEBHOOKS }}
+          SEED_ONLY: ${{ inputs.seed_only && '1' || '0' }}
+          # ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}  # add later for Claude curation
+        run: dotnet run --project GameNewsToDiscord -c Release
+
+      - name: Commit updated state
+        run: |
+          git config user.name "game-news-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/seen.json state/heartbeat.txt
+          if git diff --staged --quiet; then
+            echo "No state changes to commit."
+          else
+            git commit -m "Update news state [skip ci]"
+            git push
+          fi

@@ -1,0 +1,70 @@
+{
+  "pollMinutes": 30,
+  "games": [
+    {
+      "key": "ardem",
+      "name": "Ardem",
+      "feeds": [
+        { "source": "Steam", "url": "https://store.steampowered.com/feeds/news/app/2179480/?l=english" }
+      ]
+    },
+    {
+      "key": "readyornot",
+      "name": "Ready or Not",
+      "feeds": [
+        { "source": "Steam", "url": "https://store.steampowered.com/feeds/news/app/1144200/?l=english" }
+      ]
+    },
+    {
+      "key": "satisfactory",
+      "name": "Satisfactory",
+      "feeds": [
+        { "source": "Steam", "url": "https://store.steampowered.com/feeds/news/app/526870/?l=english" }
+      ]
+    },
+    {
+      "key": "starrupture",
+      "name": "StarRupture",
+      "feeds": [
+        { "source": "Steam", "url": "https://store.steampowered.com/feeds/news/app/1631270/?l=english" }
+      ]
+    },
+    {
+      "key": "warthunder",
+      "name": "War Thunder",
+      "feeds": [
+        { "source": "Forum", "url": "https://forum.warthunder.com/c/official-news-and-information/7.rss" },
+        { "source": "Steam", "url": "https://store.steampowered.com/feeds/news/app/236390/?l=english" }
+      ]
+    },
+    {
+      "key": "worldofwarships",
+      "name": "World of Warships",
+      "feeds": [
+        { "source": "Official", "url": "https://worldofwarships.com/en/rss/news/" },
+        { "source": "Steam", "url": "https://store.steampowered.com/feeds/news/app/552990/?l=english" }
+      ]
+    },
+    {
+      "key": "f125",
+      "name": "F1 25",
+      "feeds": [
+        { "source": "Steam", "url": "https://store.steampowered.com/feeds/news/app/3059520/?l=english" }
+      ]
+    },
+    {
+      "key": "hoi4",
+      "name": "Hearts of Iron IV",
+      "feeds": [
+        { "source": "Steam", "url": "https://store.steampowered.com/feeds/news/app/394360/?l=english" }
+      ]
+    },
+    {
+      "key": "subnautica2",
+      "name": "Subnautica 2",
+      "feeds": [
+        { "source": "Steam", "url": "https://store.steampowered.com/feeds/news/app/1962700/?l=english" }
+      ]
+    }
+  ]
+}
