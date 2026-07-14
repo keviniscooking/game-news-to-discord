@@ -290,7 +290,9 @@
     "https://store.steampowered.com/news/app/552990/view/712280796281438773",
     "t:weekend highlights 15 5 4",
     "https://worldofwarships.com/en/news/game-updates/update-156-battle-pass/",
-    "t:update 15 6 battle pass"
+    "t:update 15 6 battle pass",
+    "https://worldofwarships.com/en/news/community/crank-it-up-to-11/",
+    "t:recruiting station crank it up to 11th"
   ],
   "f125": [
     "https://store.steampowered.com/news/app/3059520/view/694261143299949598",
@@ -338,7 +340,9 @@
     "https://store.steampowered.com/news/app/394360/view/717908846920598779",
     "t:hoi iv dev corner questions about civil wars",
     "https://store.steampowered.com/news/app/394360/view/671748399637202350",
-    "t:hoi iv open beta se update 1"
+    "t:hoi iv open beta se update 1",
+    "https://store.steampowered.com/news/app/394360/view/717908846920600602",
+    "t:hoi iv dev corner warfare in the third dimension airborne units in hoi"
   ],
   "subnautica2": [
     "https://store.steampowered.com/news/app/1962700/view/655979911377323530",
@@ -360,6 +364,8 @@
     "https://store.steampowered.com/news/app/1962700/view/699894448411121133",
     "t:update vlog early access 1 1 adaptive measures",
     "https://store.steampowered.com/news/app/1962700/view/699894448411121467",
-    "t:subnautica 2 early access 1 1 adaptive measures update"
+    "t:subnautica 2 early access 1 1 adaptive measures update",
+    "https://store.steampowered.com/news/app/1962700/view/703273597028796065",
+    "t:subnautica 2 early access hotfix 4"
   ]
 }
